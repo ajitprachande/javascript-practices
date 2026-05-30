@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+
+<body class="container-fluid">
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="border border-primary p-4">
+            <h2 class="text-center p-3 border border-primary rounded">Sign-up</h2>
+            <div class="mt-2">
+                <label for="name" class="form-label">Enter Full name</label>
+              <div class="input-group">
+                 <span class="bi bi-person input-group-text"></span>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Full name"> 
+
+              </div>
+
+            </div>
+            <div class="mt-2">
+                <label for="Email" class="form-label">Enter Email</label>
+              <div class="input-group">
+                 <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                  <input type="email" name="Email" id="Email" class="form-control" placeholder="Valid Email"> 
+                  <span class="input-group-text">@gmail.com</span>
+
+              </div>
+
+            </div>
+             <div class="mt-2">
+                <label for="Password" class="form-label">Enter Password</label>
+              <div class="input-group">
+                 <span class="bi bi-key input-group-text"></span>
+                  <input type="password" name="Password" id="Password" class="form-control" placeholder="*******"> 
+
+              </div>
+
+            </div> 
+            <div class="mt-2">
+                <label for="Password" class="form-label">Confirm Password</label>
+              <div class="input-group">
+                 <span class="bi bi-key input-group-text"></span>
+                  <input type="password" name="Password" id="Password" class="form-control" placeholder="Re-enter password"> 
+
+              </div>
+
+            </div>
+            <div class="mt-2">
+                <label for="mobile" class="form-label">Mobile Number</label>
+              <div class="input-group">
+                 <span class=" input-group-text">+91</span>
+                  <input type="number" name="mobile" id="mobile" class="form-control" placeholder="9022XXXXXX"> 
+              </div>
+            </div>
+             <div class="mt-2">
+                <label for="gender" class="form-label">Select Gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="radio1">
+                    <label for="radio1">Male</label>
+
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="radio2">
+                    <label for="radio2">Female</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="radio3">
+                    <label for="radio3">Other</label>
+                </div>
+            </div>
+            <div class="mt-2">
+                <label for="subscribe" class="form-label"> Accept Terms and Conditions</label>
+                <div class="form-switch">
+                    <input class="form-check-input" type="checkbox" name="subscribe">
+                </div>
+            </div>
+            <div class="mt-2">
+               <button class="fs-5 fw-bold form-control btn btn-primary">Register</button>
+            </div>
+            <div class="mt-2 p-1">
+                <!-- <label for="Login"><a href="sign-in.html">or Login here.</a></label> -->
+                <span><a href="sign-in.html">or Login here.</a></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

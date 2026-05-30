@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-in</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head> 
+
+<body class="container-fluid">
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="p-4 border border-warning">
+            <h2 class="text-center p-3 border border-warning rounded">Sign-in</h2>
+
+            <div class="mt-5">
+                <div>
+                    <label class="form-label" for="UserName">Username or Email</label>
+                    <div class="input-group">
+                        <span class="bi bi-person input-group-text"></span>
+                        <input type="text" name="UserName" id="UserName" placeholder="UserName or Email"
+                            class="form-control">
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <label class="form-label" for="Password">Password</label>
+                    <div class="input-group">
+                        <span class="bi bi-key input-group-text"></span>
+                        <input type="Password" name="Password" id="Password" placeholder="******" class="form-control">
+                    </div>
+                    <div class="mt-2 input-group">
+                        <div class="">
+                            <input type="checkbox" id="Remember" class="checkbox form-check-input ">
+                        </div>
+                       <label for="Remember"class="ms-2"> Remember me</label>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <div class="form-control btn btn-warning " ><i class="bi bi-box-arrow-in-right"></i>  Login</div>
+                </div>
+                <div class="">
+                    <label for="form-label"><a href="sign-up.html">or Register</a></label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
