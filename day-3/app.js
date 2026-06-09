@@ -57,6 +57,11 @@ console.log(str2.slice(11,14));
 console.log(str.concat(str1));
 console.log();
 
+console.log(str2.replace("JavaScript","JS"));
+
+console.log(str2.charAt(1));
+
+
 
 
 
