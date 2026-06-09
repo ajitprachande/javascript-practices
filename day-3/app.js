@@ -4,6 +4,21 @@
 //     console.log(`${num} X ${i} = ${num*i}`);
 // }
 
+/*
+1. Email Generator
+
+Take users full name and generate email like:
+
+lowercase
+remove spaces
+add @gmail.com
+
+Example:
+
+Input: "john doe"
+Output: johdoe@gmail.com
+*/
+
 var input = "john doe 123 ";
 let new_input = "";
 input = input.toLowerCase();
