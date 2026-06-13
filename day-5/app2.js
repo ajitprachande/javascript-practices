@@ -172,4 +172,75 @@ let EpmDesignitions = employees1.reduce((result, employee) =>{
 }, {})
 
 console.log(EpmDesignitions);
+console.log("--------------------------Example using all three methods---------------------------");
+
+//(Using All Three Together map(), filter() and reduce() Example: )
+
+//Database Data
+const orders = [
+    {item: "pizza", price : 500, status : "delivered"},
+    {item: "burger", price : 300, status : "canceled"},
+    {item: "Thali", price : 800, status : "delivered"},
+    {item: "mohito", price : 300, status : "canceled"},
+    {item: "snacks", price : 1000, status : "delivered"},
+];
+
+//1. Get delivered orders (filter())
+let delivered_orders = orders.filter((order) => {
+    return order.status == "delivered";
+})
+console.log(delivered_orders);
+
+//2. Format items for UI (map())
+const orderName = delivered_orders.map((order) => {
+        return `${order.item} Ordered Successfully.`;
+})
+console.log(orderName);
+
+//3: Calculate revenue (reduce())
+const revenue = delivered_orders.reduce((total, order) => {
+    return total + order.price;
+},0);  
+console.log("Total revenue generated:",revenue);
+
+console.log("--------------------------Q2: Number Transformation Challenge---------------------------");
+
+//Q2: Number Transformation Challenge
+// Input Data
+// Given the following array:
+// const nums = [3, 8, 12, 5, 20, 7, 15];
+
+// Challenge Steps
+// Chain filter(), map(), and reduce():
+// 1Keep numbers divisible by 3 or 5. => return array => filter()
+// 2Square each selected number. => return array => map()
+// 3Find the sum of all squared values. =>return number => reduce()
+
+// Expected Output: A single number.
+
+const nums = [3, 8, 12, 5, 20, 7, 15, 21, 22, 23];
+//1.
+let divisible = nums.filter((n)=>{
+    return n%3===0 || n%5===0;
+});
+console.log("divisible by 3 or 5 nums array:",divisible);
+
+//2.
+let sqr = divisible.map((sqr) => {
+        return sqr*sqr;
+})
+console.log("square nums: ",sqr);
+
+//3.
+let sum_of_all_sqrNums = sqr.reduce((sum, num) => {
+    return sum+=num;
+},0);
+console.log("Sum of all squared numbers: ",sum_of_all_sqrNums);
+
+
+
+
+
+
+
 
