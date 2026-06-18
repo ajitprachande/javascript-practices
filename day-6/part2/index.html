@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js DOM - part-2</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 200px;
+            border: 2px solid red;
+        }
+        .para {
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <hr>queryselector()
+
+    <div class="card" id="card1" name="identityCard">
+        HELLO MY NAME IS AJIT <!--chk Js code, used queryselector()-->
+    </div>
+    <hr>    
+    getAttribute()
+    <img src="UnkownImage.jpg"> <!--chk Js code, getAttribute() used -->
+    <hr>
+    SetAttribute()
+
+    <div class="old" id="old1" name="oldpara">
+        <!-- SetAttribute() -->
+    </div>
+    <hr>
+
+    <!-- example for append()  -->
+    <div class="box" id="box1">
+        Adds an element inside another element at the end.
+    </div><br>
+    <!--  example for prepend() -->
+    <div class="box" id="box2">
+        Adds an element inside another element at the beginning.
+    </div>
+    <br><br>
+    <!-- example for before() -->
+    <div class="box" id="box3">
+        Adds an element outside the selected element before it.
+    </div><br>
+    <!-- example for after() -->
+    <div class="box" id="box4">
+        It inserts an element outside and after the selected element
+    </div>
+    <hr>
+    remove()
+    <!-- remove() -->
+    <button class="removeBtn">
+        Remove me
+    </button>
+
+    <hr>appendChild() .
+    <!-- appendChild() and removeChild() -->
+
+    <div class="Parent">
+        <button>Click Me</button>
+    </div>
+    <br>
+    removeChild()
+    <!-- removeChild()  -->
+    <div class="Parent2">
+        <button>Click Me</button>
+        <button id="removebtn">remove me</button>
+    </div>
+
+    <hr>
+    <!--  Q create a para, give styling through style.css, create new class and append it in tag through javascript -->
+      <p class="para"></p>
+
+
+
+
+    <script src="app.js">
+
+    </script>
+
+</body>
+
+
+</html>
