@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+
+<body>
+    <h1>Welcome to Javascript event listener</h1>
+    <hr>
+
+    <button id="btn1">Click()</button>
+    <button id="dblclick">dblclick()</button>
+    <button id="btn2">change body theme</button>
+
+    <button id="btn3">toggleBtn</button>
+
+    <hr>
+    Mouse Events
+    <button id="btn4">mouseover()</button>
+    <button id="btn5">mouseleave()</button>
+    <hr>
+    Keyboard Events
+    <button id="btn6">keydown()</button>
+    <button id="btn7">keyup()</button>
+    <hr>
+    removeEventListener()
+    <br>
+    Program 1:
+    <button id="start">Start </button>
+    <button id="stop">Stop</button> <br>
+
+    Program 2: Like Button (Only 5 Likes Allowed) <br><br>
+
+    <button id="likebtn">Like</button>
+    <p id="countText">Likes: 0</p>
+
+    <hr>
+    <!-- Create an input field and display its value in the console whenever the user types. -->
+    <label for="search">Search here...</label>
+    <input type="text" placeholder="search..." name="search" id="searchBar">
+    <hr>
+
+    <div class="square" id="box1" style="height: 200px; width: 400px; border: 2px solid red;"></div>
+    <button id="boxBtn">Change box color</button>
+    <hr><br>
+
+    <!--  preventDefault() : It prevents the browser from executing the default action of an element. -->
+    <!-- If we click the link but we do not want the browser to open Google, which method should we use? -->
+
+     preventDefault() : is an event method that prevents the browser from executing the default behavior of an HTML element. <br><br>
+    <a href="https://google.com" id="preventdefault">Google</a>
+    
+    
+    
+    <hr><br><br>
+    <!-- Create a form that displays a message when the user submits it. -->
+     Create a form that displays a message when the user submits it. and Stop browser's default page refreshing using preventDefault(). <br><br>
+    <form action="#" method="get" id="loginForm">
+        <label for="Username">Username</label>
+        <input type="text" name="username" id="Username">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password">
+        <button>submits</button>
+    </form>
+    <hr>
+    <br><br>
+    stopPropagation() — It stops the event from moving from the current element to other elements in the DOM tree.
+
+    <div id="parent">
+        <button id="stop_prop">Click me</button>
+    </div>
+
+
+
+
+
+
+
+<button id="context">asdfjdjsfks</button>
+
+
+
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
